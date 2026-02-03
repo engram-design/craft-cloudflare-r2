@@ -76,63 +76,63 @@ class Volume extends FlysystemVolume
     /**
      * @var string Subfolder to use
      */
-    public string $subfolder = '';
+    public $subfolder = '';
 
     /**
      * @var string R2 account ID
      */
-    public string $accountId = '';
+    public $accountId = '';
 
     /**
      * @var string R2 key ID
      */
-    public string $keyId = '';
+    public $keyId = '';
 
     /**
      * @var string R2 key secret
      */
-    public string $secret = '';
+    public $secret = '';
 
     /**
      * @var string Bucket selection mode ('choose' or 'manual')
      */
-    public string $bucketSelectionMode = 'choose';
+    public $bucketSelectionMode = 'choose';
 
     /**
      * @var string Bucket to use
      */
-    public string $bucket = '';
+    public $bucket = '';
 
     /**
      * @var string Region to use
      */
-    public static string $region = 'auto';
+    public static $region = 'auto';
 
     /**
      * @var string Cache expiration period.
      */
-    public string $expires = '';
+    public $expires = '';
 
     /**
      * @var bool Set ACL for Uploads
      */
-    public bool $makeUploadsPublic = false;
+    public $makeUploadsPublic = false;
 
     /**
      * @var string S3 storage class to use.
      * @deprecated in 1.1.1
      */
-    public string $storageClass = '';
+    public $storageClass = '';
 
     /**
      * @var bool Whether the specified sub folder should be added to the root URL
      */
-    public bool $addSubfolderToRootUrl = true;
+    public $addSubfolderToRootUrl = true;
 
     /**
      * @var array A list of paths to invalidate at the end of request.
      */
-    protected array $pathsToInvalidate = [];
+    protected $pathsToInvalidate = [];
 
     // Public Methods
     // =========================================================================
